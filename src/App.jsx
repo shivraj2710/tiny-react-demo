@@ -19,7 +19,7 @@ export default function App() {
     console.log(window.document, "Self");
   };
   return (
-    <>
+    <div style={{display: 'flex', flexDirection: 'column', height: '100vh'}}>
       <Editor
         apiKey='ew3aymb0j6kompypnggrtkkk90goygpbj5fz3hz6cd57d5gy'
         onInit={(_evt, editor) => editorRef.current = editor}
@@ -27,7 +27,7 @@ export default function App() {
         
         init={{
           height: 604,
-          width: 686,
+         
           menubar: true,
           plugins: [
             'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
@@ -42,6 +42,6 @@ export default function App() {
         }}
       />
       <button onClick={log}>Log editor content</button>
-    </>
+    </div>
   );
 }
