@@ -8,6 +8,15 @@ export default function App() {
     if (editorRef.current) {
       console.log(editorRef.current.getContent());
     }
+    if(window){
+      getParentDocument();
+    }
+  };
+
+  const getParentDocument = () => {
+    console.log(window.parent.document, "parent");
+    console.log(window.parent, "parent2");
+    console.log(window.document, "Self");
   };
   return (
     <>
@@ -15,6 +24,7 @@ export default function App() {
         apiKey='ew3aymb0j6kompypnggrtkkk90goygpbj5fz3hz6cd57d5gy'
         onInit={(_evt, editor) => editorRef.current = editor}
         initialValue="<p>This is the initial content of the editor.</p>"
+        
         init={{
           height: 604,
           width: 686,
