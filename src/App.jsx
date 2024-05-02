@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
-import './App.css';
+// import './App.css';
 
 export default function App() {
   const editorRef = useRef(null);
