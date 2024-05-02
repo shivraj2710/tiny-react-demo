@@ -14,8 +14,8 @@ export default function App() {
   };
 
   const getParentDocument = () => {
-    console.log(window.parent.document, "parent");
-    console.log(window.parent, "parent2");
+    // console.log(window.parent.document, "parent");
+    // console.log(window.parent, "parent2");
     console.log(window.document, "Self");
   };
   return (
