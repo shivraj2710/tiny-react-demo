@@ -19,7 +19,7 @@ export default function App() {
     console.log(window.document, "Self");
   };
   return (
-    <div style={{display: 'flex', flexDirection: 'column', height: '100vh'}}>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
       <Editor
         apiKey='ew3aymb0j6kompypnggrtkkk90goygpbj5fz3hz6cd57d5gy'
         onInit={(_evt, editor) => editorRef.current = editor}
