@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
-// import './App.css';
 
 export default function App() {
   const editorRef = useRef(null);
@@ -14,8 +13,8 @@ export default function App() {
   };
 
   const getParentDocument = () => {
-    // console.log(window.parent.document, "parent");
-    // console.log(window.parent, "parent2");
+    console.log(window.parent.document, "parent");
+    console.log(window.parent, "parent2");
     console.log(window.document, "Self");
   };
   return (
@@ -27,7 +26,6 @@ export default function App() {
         
         init={{
           height: 604,
-         
           menubar: true,
           plugins: [
             'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
